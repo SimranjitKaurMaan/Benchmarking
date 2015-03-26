@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/sky" />
+
+    <Button
+        android:id="@+id/insertButton"
+        style="@style/CustomButton"
+        android:layout_marginTop="80dp"
+        android:text="INSERT"/>
+
+    <Button
+        android:id="@+id/selectButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/insertButton"
+        android:text="SELECT"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/selectButton"
+        android:text="UPDATE"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/updateButton"
+        android:text="DELETE"
+        android:enabled="false"/>
+
+</RelativeLayout>
